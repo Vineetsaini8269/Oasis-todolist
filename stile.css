@@ -1,0 +1,221 @@
+*{
+
+    padding: 0;
+
+    margin: 0;
+
+    font-family: sans-serif;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    height: 100vh;
+
+    background: #313131;
+
+    display: grid;
+
+    place-items: center;
+
+}
+
+.BOX {
+
+    height: 350px;
+
+    width: 300px;
+
+    background: #edf1f5;
+
+    position: relative;
+
+}
+
+.BOX1{
+
+    height: 70px;
+
+    width: 100%;
+
+    background: #ff4444;
+
+    color: #fff;
+
+    display: grid;
+
+    place-items: center;
+
+}
+
+.BOX2{
+
+    font-size: 21px; 
+
+    position: absolute;
+
+    top: 90px;
+
+    left: 20px;
+
+    height: 45px;
+
+    border: none;
+
+    width: 260px;
+
+    border-bottom: 2px solid #4b4949;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 0 10px;
+
+    color: #313131;
+
+
+}
+
+.BOX2::placeholder {
+
+    color: #313131;
+
+}
+
+.line{
+
+    position: absolute;
+
+    top: 150px;
+
+    left: 20px;
+
+    list-style: none;
+
+    height: 120px;
+
+    width: 260px;
+
+    overflow: auto;
+
+}
+
+.line li {
+
+    height: 50px;
+
+    width: 100%;
+
+    margin: 4px 0;
+
+    position: relative;
+
+    left: 0;
+
+    border: 1px solid #1f3148;
+
+    overflow: hidden;
+
+}
+
+.line li h4 {
+
+    height: 50px;
+
+    width: 320px;
+
+    padding: 0 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    color: #1f3148;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+}
+
+.line li .deleteTask {
+
+    height: 50px;
+
+    width: 40px;
+
+    z-index: 999;
+
+    display: grid;
+
+    place-items: center;
+
+    position: absolute;
+
+    right: -50px;
+
+    background: #ff4444;
+
+    color: #e2e2e2;
+
+    transition: 0.7s all ease-in-out;
+
+    cursor: pointer;
+
+}
+
+.line li:hover .deleteTask {
+
+    right: 0;
+
+}
+
+
+.btn{
+
+    height: 50px;
+
+    width: 220px;
+
+    position: absolute;
+
+    left: 40px;
+
+    bottom: 20px;
+
+    background: #ff4444;
+
+    outline: none;
+
+    color: #fff;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size:20px;
+
+    transition: all .8s ease-in;
+
+}
+
+.btn:hover{
+
+    background: transparent;
+
+    border: 3px solid #ff4444;
+
+    color: red;
+
+    font-size: 20px;
+
+    border-radius: 4px;
+
+}
